@@ -14,9 +14,9 @@ sudo apt-get install -y mongodb-org
 
 # set up configs for replica set
 tee -a "/etc/hosts" <<-EOF
-192.16.40.100 mongoa
-192.16.40.130 mongob
-192.16.40.160 mongoc
+192.168.40.100 mongoa
+192.168.40.130 mongob
+192.168.40.160 mongoc
 EOF
 
 sudo rm /etc/mongod.conf
