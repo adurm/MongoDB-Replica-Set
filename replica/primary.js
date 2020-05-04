@@ -1,3 +1,8 @@
-rs.initiate()
-rs.add("mongob")
-rs.add("mongoc")
+rs.initiate( {
+  _id: "replica01",
+  members: [
+    { _id: 0, host: "192.168.40.100:27017" },
+    { _id: 1, host: "192.168.40.130:27017" },
+    { _id: 2, host: "192.168.40.160:27017" }
+  ]
+})
