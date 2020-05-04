@@ -24,10 +24,6 @@ sudo cp /home/ubuntu/config/mongod.conf /etc/mongod.conf
 
 sudo systemctl start mongod.service
 sudo systemctl enable mongod.service
-sleep 5
 # sudo ufw enable
 # sudo ufw allow ssh
 # sudo ufw allow 27017/tcp
-
-cd /home/ubuntu/replica
-mongo primary.js
