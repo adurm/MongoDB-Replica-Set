@@ -22,8 +22,9 @@ EOF
 sudo rm /etc/mongod.conf
 sudo cp /home/ubuntu/config/mongod.conf /etc/mongod.conf
 
-sudo systemctl start mongod.service
-sudo systemctl enable mongod.service
+sudo systemctl start mongod
+sudo systemctl enable mongod
+sudo systemctl reload-or-restart mongod
 sudo sleep 5
 cd /home/vagrant/replica
-mongo 192.168.40.100:27017 primary.js
+mongo primary.js
